@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="email=no,telephone=no,address=no">
+<title>=^.^=</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+#main {
+  font-size: 32px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#main em {
+  color: red;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+</style>
+</head>
+<body>
+
+<div id="main">
+
+  <p>
+    <em>これは太くて赤い</em>
+  </p>
+
+  <p>
+    <em style="color: unset;">colorをリセット</em>
+  </p>
+
+  <p>
+    <em style="all: unset;">unset: 指定されたすべてを、リセット（継承は生きる）</em>
+  </p>
+
+  <p>
+    <em style="all: revert;">revert: 指定されたすべてを、ブラウザ初期状態にリセット（継承は生きる）</em>
+  </p>
+
+  <p>
+    <em style="all: initial;">initial: 継承も含めてすべて無視してリセットを指定（継承も無視）フォント指定などもリセットされる</em>
+  </p>
+
+  <hr>
+
+  <p>
+    <em style="all: revert; color: blue;">すべてリセットして指定し、改めて指定もできる。</em>
+  </p>
+
+</div>
+
+</body>
+</html>

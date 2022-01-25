@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="email=no,telephone=no,address=no">
+<title>=^.^=</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.myDialog {
+  box-sizing: border-box;
+  width: calc( 100vw - 32px );
+  padding: 16px;
+  border: none;
+}
+
+.myDialog::backdrop {
+  opacity: .8;
+  background: linear-gradient(to bottom, #1cb5e0, #000046);
+}
+</style>
+</head>
+<body>
+
+<dialog class="myDialog">
+  <p>簡易モーダル</p>
+  <button
+    type="button"
+    onclick="document.querySelector( 'dialog' ).close()"
+  >
+    close
+  </button>
+</dialog>
+
+<button
+  type="button"
+  onclick="document.querySelector( 'dialog' ).showModal()"
+>
+  open
+</button>
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="email=no,telephone=no,address=no">
+<title>=^.^=</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.page-header {
+  height: 80px;
+}
+
+.page-header__inner {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  background: rgba( 255, 255, 255, .75 );
+  backdrop-filter: blur( 3px );
+}
+
+.page-header__inner img {
+  display: block;
+  height: 50px;
+}
+
+.flyout {
+  display: flex;
+  position: relative;
+}
+
+.flyout__label {
+  padding: 4px;
+  border-radius: 3px;
+  color: #fff;
+  background: #009efd;
+}
+
+.flyout__menu {
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  display: none;
+  padding: 20px;
+  background: rgba( 255, 255, 255, .5 );
+  backdrop-filter: blur( 3px );
+}
+
+.flyout:hover .flyout__menu {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <div class="page-header__inner">
+    <img src="./img_04.svg" alt="">
+  </div>
+</header>
+
+<div class="flyout">
+  <div class="flyout__label">
+    フライアウト
+  </div>
+  <div class="flyout__menu">
+    メニュー 1<br>
+    メニュー 2<br>
+    メニュー 3<br>
+    メニュー 4<br>
+    ながーーーいメニュー 5<br>
+  </div>
+</div>
+
+<p>重なり部分にフィルター</p>
+
+<img src="img_02.svg" alt="" style="display: block; width: 100%">
+<div style="height: 1000px">スクロール余白</div>
+
+</body>
+</html>

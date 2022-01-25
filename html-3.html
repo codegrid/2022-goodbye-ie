@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="email=no,telephone=no,address=no">
+<title>=^.^=</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.accordion {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.accordion summary {
+  position: relative;
+  display: block;
+  padding: 10px;
+  color: #3370bf;
+  background: #e2edfc;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary::after {
+  content: "";
+  position: absolute;
+  top: calc( 50% - 10px );
+  right: 16px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("data:image/svg+xml,%3Csvg%20height=%2264%22%20viewBox=%220%200%2064%2064%22%20width=%2264%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath%20d=%22m62%2017-30%2030-30-30%22%20fill=%22none%22%20stroke=%22%233370bf%22%20stroke-width=%224%22/%3E%3C/svg%3E") 0 0 / 100% 100%;
+  transition: transform .3s;
+}
+
+.accordion[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.accordion__panel {
+  padding: 10px 10px 10px;
+  margin-left: 20px;
+  border-left: 4px solid #ccc;
+}
+</style>
+</head>
+<body>
+
+<details>
+  <summary>JSなしでもアコーディオンはできますか？</summary>
+  はい、可能です
+</details>
+
+<details class="accordion">
+  <summary>CSSで見た目を変えられますか？</summary>
+  <div class="accordion__panel">
+    はい、可能です
+  </div>
+</details>
+
+</body>
+</html>

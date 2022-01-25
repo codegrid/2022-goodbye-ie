@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="email=no,telephone=no,address=no">
+<title>=^.^=</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.block {
+  width: 400px;
+}
+
+.block a {
+  display: block;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 2px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.block img {
+  display: block;
+  width: 100%;
+  transition: filter .2s;
+}
+
+.block a:hover img {
+  filter: brightness( 1.1 );
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 50px;
+  border: 2px solid #009efd;
+  border-radius: 999px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+  transition: filter .2s;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+}
+</style>
+</head>
+<body>
+
+<div class="block">
+  <a href="#">
+    <img src="./img_02.svg" alt="">
+    <p>
+      filter を使った hover 効果
+    </p>
+  </a>
+</div>
+
+<div style="margin-top: 40px"></div>
+
+<a class="button" href="#">
+  filter を使った hover 効果
+</a>
+
+</body>
+</html>

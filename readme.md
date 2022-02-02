@@ -9,7 +9,7 @@ Internet Explorer 11 では対応していなかったけれど、Edge では使
 - [`<dialog>`で簡易モーダル (スタイル適用)](https://codegrid.github.io/2022-goodbye-ie/html-4b.html)
 - [`<wbr>`改行下の位置指定](https://codegrid.github.io/2022-goodbye-ie/html-5.html)
 - [`<a href="file.png" download>`でリンク先をダウンロード](https://codegrid.github.io/2022-goodbye-ie/html-6.html)
-- [APNG: アニメーションPNG](https://codegrid.github.io/2022-goodbye-ie/html-7.html)
+- [APNG, WebP, WebM](https://codegrid.github.io/2022-goodbye-ie/html-7.html)
 
 ## CSS編
 

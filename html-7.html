@@ -9,12 +9,31 @@
 body {
   background: url( "./img_01.png" );
 }
+video {
+  width: 400px;
+  max-width: 100%;
+}
 </style>
 </head>
 <body>
 
+<h2>APNG (lossless)</h2>
+116KB / 34KB<br>
 <img src="./apng1.png" alt="">
 <img src="./apng2.png" alt="">
+
+<hr>
+<h2>WebP (quality: 80)</h2>
+34KB / 12KB<br>
+<img src="./webp1.webp" alt="">
+<img src="./webp2.webp" alt="">
+
+<hr>
+<h2>WebM</h2>
+<video controls>
+  <source src="./video-hevc.mov" type='video/mp4; codecs="hvc1"'>
+  <source src="./video-vp9.webm" type="video/webm">
+</video>
 
 </body>
 </html>

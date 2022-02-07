@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="format-detection" content="email=no,telephone=no,address=no">
+<title>=^.^=</title>
+<style>
+
+body {
+  font-family: sans-serif;
+}
+
+.image-container-hover2 {
+  margin: 0 auto 50px;
+  color: #fff;
+  background: #000;
+}
+
+.image-container-hover2__inner {
+  /* clip-path:inset(上 右 下 左); */
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 1s;
+  font-size: 100px;
+}
+
+.image-container-hover2:hover .image-container-hover2__inner {
+  clip-path: inset(0 0 0 0);
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="image-container-hover2">
+  <div class="image-container-hover2__inner">
+    テキストのアニメーションにも
+  </div>
+</div>
+
+</body>
+</html>
